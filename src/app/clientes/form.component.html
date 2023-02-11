@@ -1,0 +1,29 @@
+<div class="card bg-dark text-white">
+  <div class="card-header">{{ titulo }}</div>
+  <div class="card-body">
+    <form action="" (ngSubmit)="create()">
+      <div class="form-group row">
+        <label class="col-form-label col-sm-2">Nombre</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" name="nombre" value="" [(ngModel)]=cliente.nombre>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-form-label colsm-2">Apellido</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" name="apellido" value="" [(ngModel)]=cliente.apellido>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-form-label colsm-2">Email</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" name="email" value="" [(ngModel)]=cliente.email>
+        </div>
+      </div>
+      <br>
+      <div class="form-group row">
+        <div class="col-sm-6"><button class="btn btn-primary" role="button">Crear</button></div>
+      </div>
+    </form>
+  </div>
+</div>
